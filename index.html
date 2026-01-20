@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kunda Munshifwa | Portfolio</title>
-    <meta name="description"
-        content="Portfolio of Kunda Munshifwa - Web Developer and Software Developer">
+    <meta name="description" content="Portfolio of Kunda Munshifwa - Web Developer and Software Developer">
+    <meta name="keywords" content="Kunda Munshifwa, Web Developer Zambia, Software Developer, React Developer">
+    <meta name="author" content="Kunda Munshifwa">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body>
@@ -21,6 +24,17 @@
         
         <h1>Kunda Munshifwa</h1>
         <p>Web Developer | Software Developer | AI & Machine Learning Enthusiast</p>
+
+        <a href="cv/kunda munshifwa CV.pdf" class="btn secondary" download>
+            Download CV
+        </a>
+
+
+        <div class="hero-actions">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+        </div>
+
     </header>
 
     <nav>
@@ -39,6 +53,25 @@
             <p>I am a passionate and dedicated Web and Software Developer. I enjoy solving
                 complex problems and building innovative solutions with modern technologies.</p>
         </section>
+
+        <section id="why-me">
+            <h2>Why Choose Me?</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Problem Solver</h3>
+                    <p>I enjoy solving real-world problems using technology and logic-driven solutions.</p>
+                </div>
+                <div class="card">
+                    <h3>Real Systems Experience</h3>
+                    <p>Built safety-critical systems involving IoT, real-time data, and dashboards.</p>
+                </div>
+                <div class="card">
+                    <h3>Fast Learner</h3>
+                    <p>Quickly adapt to new tools, frameworks, and technologies.</p>
+                </div>
+            </div>
+        </section>
+
 
         <!-- Skills -->
         <section id="skills">
@@ -73,40 +106,103 @@
 
         <!-- Projects -->
         <section id="projects">
-            <h2>Projects & Achievements</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Mine Workers' Safety Monitoring System</h3>
-                    <p>An IoT-based system for monitoring mine workers’ health and environmental conditions in real time. It tracks vital signs and hazardous gas levels, providing instant alerts and a live dashboard to improve safety in high-risk environments.</p>
+                <h2>Projects & Achievements</h2>
+
+                <div class="cards">
+
+                    <!-- Mine Workers' Safety Monitoring System -->
+                    <div class="card">
+                        <h3>Mine Workers' Safety Monitoring System</h3>
+
+                        <p>
+                            An IoT-based safety system designed to monitor mine workers’ vital signs and
+                            environmental conditions in real time. The system tracks heart rate, temperature,
+                            gas exposure levels, and location data, providing instant alerts through a live
+                            dashboard to improve worker safety in high-risk environments.
+                        </p>
+
+                        <p class="tech">
+                            React • WebSockets • IoT • MQTT • MySQL • ESP32
+                        </p>
+
+                        <div class="project-links">
+                            <a href="https://github.com/BiohazardXp/Mine-Workers-Safety-Monitoring-System" target="_blank">
+                                GitHub Repository
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Drowsiness Detection System -->
+                    <div class="card">
+                        <h3>Drowsiness Detection System</h3>
+
+                        <p>
+                            A real-time driver safety system that detects signs of fatigue using computer vision.
+                            The application monitors facial features such as eye closure and head movement to
+                            identify drowsiness and trigger alerts, helping to reduce road accidents. The system
+                            includes a web-based dashboard for managing drivers and viewing detection logs.
+                        </p>
+
+                        <p class="tech">
+                            Python • OpenCV • Flask • Computer Vision • SQLite
+                        </p>
+
+                        <div class="project-links">
+                            <a href="https://github.com/BiohazardXp/drowsiness-detection-system" target="_blank">
+                                GitHub Repository
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="card">
-                    <h3>Drowsiness Detection System</h3>
-                    <p>A real-time driver safety system that detects signs of fatigue using computer vision. It monitors facial features to identify drowsiness and triggers alerts to help prevent road accidents. Includes a web-based dashboard for managing drivers and viewing detection logs.</p>
-                </div>
-                <div class="card">
-                    <h3>Open Source Contributions</h3>
-                    <p>Contributed to multiple web development projects, focusing on functionality and UX
-                        improvements.</p>
-                </div>
-                <div class="card">
-                    <h3>AI & ML Courses</h3>
-                    <p>Completed various programming courses in AI, Machine Learning, and Web Development to enhance
-                        technical expertise.</p>
-                </div>
-            </div>
         </section>
+
 
         <!-- Contact -->
         <section id="contact">
             <h2>Contact Me</h2>
             <div class="contact">
                 <ul>
-                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kunda-munshifwa-273840265"
-                            target="_blank">Kunda Munshifwa</a></li>
-                    <li><strong>Email:</strong> <a href="mailto:munshifwakunda@gmail.com">munshifwakunda@gmail.com</a>
+                    <li>
+                        <i class = "fab fa-linkedin"></i>
+                        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kunda-munshifwa-273840265"
+                            target="_blank">Kunda Munshifwa</a>
                     </li>
-                    <li><strong>WhatsApp:</strong> <a href="https://wa.me/260963813873" target="_blank">+260 963 813
-                            873</a></li>
+                    
+                    <li>
+                        <i class = "fas fa-envelope"></i>        
+                        <strong>Email:</strong> <a href="mailto:munshifwakunda@gmail.com">munshifwakunda@gmail.com</a>
+                    </li>
+                    
+                    <li>
+                        <i class = "fab fa-whatsapp"></i>
+                        <strong>WhatsApp:</strong> <a href="https://wa.me/260963813873" target="_blank">+260 963 813
+                            873</a>
+                    </li>
+
+                     <li>
+                        <i class="fas fa-phone"></i>
+                        <strong>Telephone:</strong>
+                        <a href="tel:+260963813873">
+                            +260 963 813 873
+                        </a>
+                     </li>
+
+                    <li>
+                        <i class="fab fa-x-twitter"></i>
+                        <strong>Twitter:</strong>
+                        <a href="https://twitter.com/@_Kundar_" target="_blank">
+                            @_Kundar_
+                        </a>
+                    </li> 
+
+                    <li>
+                        <i class="fab fa-github"></i>
+                        <strong>GitHub:</strong>
+                        <a href="https://github.com/BiohazardXp" target="_blank">
+                            github.com/BiohazardXp
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section>

@@ -455,3 +455,116 @@
     border-radius: 50%;
     background: var(--dark-bg-2);
 }
+
+/* Contact icons */
+.contact li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact li i {
+    font-size: 1.3rem;
+    min-width: 24px;
+    color: var(--primary-cyan);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Brand-specific hover colors */
+.contact li:hover .fa-whatsapp {
+    color: #25D366;
+}
+
+.contact li:hover .fa-linkedin-in {
+    color: #0A66C2;
+}
+
+.contact li:hover .fa-envelope {
+    color: var(--primary-purple);
+}
+
+.contact li:hover .fa-phone {
+    color: var(--primary-cyan);
+}
+
+.contact li:hover .fa-x-twitter {
+    color: #1DA1F2;
+}
+
+.contact li:hover i {
+    transform: scale(1.15);
+}
+
+.hero-actions {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.btn {
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.btn.primary {
+    background: linear-gradient(135deg, var(--primary-cyan), var(--primary-purple));
+    color: #000;
+}
+
+.btn.secondary {
+    background: transparent;
+    color: var(--text-primary);
+    border-color: var(--glass-border);
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.3);
+}
+
+.tech {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: var(--primary-cyan);
+}
+
+.project-links {
+    margin-top: 18px;
+}
+
+.project-links a {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+    color: var(--primary-cyan);
+    border-color: var(--primary-cyan);
+}
+
+.contact li:hover .fa-github {
+    color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-actions {
+        flex-direction: column;
+    }
+}
