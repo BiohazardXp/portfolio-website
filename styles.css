@@ -569,3 +569,21 @@
         flex-direction: column;
     }
 }
+
+.btn i {
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+/* Work Experience list */
+.experience-list {
+    margin-top: 15px;
+    padding-left: 20px;
+    color: var(--text-secondary);
+}
+
+.experience-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
